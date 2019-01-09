@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bal3"
+    tools:context=".ContactUs">
+
+    <TextView
+        android:id="@+id/contact_us_text"
+        android:layout_width="@dimen/contact_us_text_width"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us_text"
+        android:textSize="@dimen/contact_us_text_size"
+        android:background="@color/contact_us_bg_color"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="80dp"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/contact_us_message"
+        android:layout_width="@dimen/contact_us_text_width"
+        android:layout_height="@dimen/contact_us_message_height"
+        android:hint="@string/contact_us_message_text"
+        android:gravity="top"
+        android:background="@color/contact_us_bg_color"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/contact_us_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us_btn_text"
+        android:layout_marginTop="@dimen/contact_us_btn_margin_top"
+        android:layout_marginLeft="@dimen/contact_us_btn_margin_left"
+        android:layout_marginStart="@dimen/contact_us_btn_margin_left"
+        android:background="@color/contact_us_btn_color"
+        />
+
+</LinearLayout>

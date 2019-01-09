@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_marginTop="@dimen/city_item_padding"
+        android:layout_width="@dimen/text_field_length2"
+        android:layout_height="wrap_content"
+        android:hint="Названия группы"
+        android:nextFocusDown="@id/GatherPoint"
+        />
+    <EditText
+        android:id="@+id/GatherPoint"
+        android:layout_marginTop="@dimen/city_item_padding"
+        android:layout_width="@dimen/text_field_length2"
+        android:layout_height="wrap_content"
+        android:hint="Точка сбора"
+        android:nextFocusDown="@id/vozrast1"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/city_item_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возраст"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/vozrast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="От  "
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@id/vozrast2"
+        />
+    <EditText
+        android:id="@+id/vozrast2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:hint="До  "
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@id/StayStatus"
+        />
+    </LinearLayout>
+
+
+
+    <CheckBox android:id="@+id/StayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  С ночевкой"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/city_item_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата сбора"/>
+
+
+    <TextView
+        android:id="@+id/gatherdate"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:hint="20-05-2019"
+        android:inputType="date"
+        android:nextFocusDown="@id/gathertime" />
+
+    <TextView
+        android:layout_marginTop="@dimen/city_item_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время сбора"/>
+
+
+    <TextView
+        android:id="@+id/gathertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="10:00"
+        android:inputType="time"/>
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/addnewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:floating_background_color="@color/colorPrimary"
+        app:floating_title="Cоздать"
+        app:floating_title_color="@android:color/white" />
+
+</LinearLayout>

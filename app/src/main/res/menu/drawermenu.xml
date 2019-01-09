@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/places" android:title="Город" android:icon="@drawable/ic_landscape_with_mountains"/>
+<item android:id="@+id/messages" android:title="Чат" android:icon="@drawable/ic_close_envelope"/>
+<item android:id="@+id/groups" android:title="Группы" android:icon="@drawable/ic_friends"/>
+<item android:id="@+id/aboutUs" android:title="О нас" android:icon="@drawable/ic_iconfinder_about_2639759"/>
+<item android:id="@+id/contactUs" android:title="Контакты" android:icon="@drawable/ic_iconfinder_at_email_address_contact_3994434"/>
+<item android:id="@+id/tips" android:title="Выйти" android:icon="@drawable/ic_elemental_tip"/>
+</menu>

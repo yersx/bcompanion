@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgray">#6c6c6c</color>
+    <color name="contact_us_bg_color">#9a46e480</color>
+    <color name="bgtint">#d902ff5f</color>
+    <color name="contact_us_btn_color">#9a26ef70</color>
+    <color name="auth_btn_color">#68cbdbd5</color>
+
+    <color name="colorIndivateTab">#FFFFFF</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="mostbgcolor">#f8f6f9</color>
+</resources>
